@@ -2,10 +2,22 @@
 
 	require_once("config.php");
 
-	$root = new Usuario();
 
-	$root->loadbyId(19);
+	// Carrega um usuario
+	//$root = new Usuario();
+	//$root->loadbyId(19);
 
-	echo $root;
+	//echo $root;
 	
+	// Carrega uma lista de usuarios
+
+//	$lista = Usuario::getList();
+
+//	echo json_encode($lista);
+
+	$search = Usuario::search("Jo");
+
+	echo json_encode($search);
+
+
 ?>

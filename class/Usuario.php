@@ -67,7 +67,24 @@
 
 			}
 
+		}
+
+		//Lista todos os registros da tabela
+		public static function getLIst(){
+
+			$sql = new Sql();
+
+			Return $sql->select("SELECT * FROM tb_usuarios ORDER BY deslogin;"); 
 		}	
+
+		public static function search($Login){
+
+			$sql = new Sql();	
+
+			Return $sql->select("SELECT * FROM tb_usuarios WHERE deslogin LIKE :search ORDER BY deslogin", array(':search'=>"%".$Login."%"));
+
+
+		} 
 
 		public function __toString(){
 
