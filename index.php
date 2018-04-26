@@ -15,9 +15,16 @@
 
 //	echo json_encode($lista);
 
-	$search = Usuario::search("Jo");
+//	$search = Usuario::search("Ma");
 
-	echo json_encode($search);
+//	echo json_encode($search);
 
+// Carrega o usuario
+
+	$usuario = new Usuario();
+
+	$usuario->login("Joao","123");
+
+	echo $usuario;
 
 ?>
