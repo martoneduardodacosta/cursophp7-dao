@@ -11,20 +11,27 @@
 	
 	// Carrega uma lista de usuarios
 
-//	$lista = Usuario::getList();
+	//	$lista = Usuario::getList();
 
-//	echo json_encode($lista);
+	//	echo json_encode($lista);
 
-//	$search = Usuario::search("Ma");
+	//	$search = Usuario::search("Ma");
 
-//	echo json_encode($search);
+	//	echo json_encode($search);
 
-// Carrega o usuario
+	// Carrega o usuario
 
-	$usuario = new Usuario();
+	//	$usuario = new Usuario();
 
-	$usuario->login("Joao","123");
+	//	$usuario->login("Joao","123");
 
-	echo $usuario;
+	//	echo $usuario;
+
+		$aluno = new Usuario("aluno","12345");
+
+		$aluno->insert();
+
+		echo $aluno;
+
 
 ?>
